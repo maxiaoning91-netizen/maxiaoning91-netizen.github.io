@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>马潇宁 · 个人主页</title>
+    <meta
+      name="description"
+      content="马潇宁的个人网站，展示项目、技能与联系方式。"
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <header class="navbar">
+      <nav class="nav-inner container">
+        <a class="brand" href="#home">
+          <span class="brand-mark">S</span>
+          <span class="brand-name">Sunny</span>
+        </a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="打开菜单" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">首页</a></li>
+          <li><a href="#about">关于我</a></li>
+          <li><a href="#experience">实习</a></li>
+          <li><a href="#projects">AI项目</a></li>
+          <li><a href="#skills">技能</a></li>
+          <li><a href="#contact">联系我</a></li>
+          <li>
+            <button id="theme-toggle" class="theme-toggle" aria-label="切换深浅色">🌙</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- 首屏 -->
+      <section id="home" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text reveal">
+            <p class="hero-eyebrow">Hiii！我是</p>
+            <h1 class="hero-title">马潇宁</h1>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#about">点这里，了解更多的我</a>
+              <a class="btn btn-ghost" href="#contact">联系我</a>
+            </div>
+          </div>
+          <div class="hero-visual reveal">
+            <div class="hero-avatar-wrap">
+              <div class="avatar-ring">
+                <img
+                  src="./avatar.jpg"
+                  alt="马潇宁的头像"
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"
+                />
+                <span class="avatar-fallback" aria-hidden="true">马</span>
+              </div>
+              <div class="floating-card card-1">Vibe coder</div>
+              <div class="floating-card card-2">ENFJ</div>
+              <div class="floating-card card-3">高能量行动力</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-wave" aria-hidden="true">
+          <svg class="wave wave-back" viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path
+              d="M0,64 C240,112 480,20 720,44 C960,68 1200,112 1440,64 L1440,120 L0,120 Z"
+            />
+          </svg>
+          <svg class="wave wave-mid" viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path
+              d="M0,82 C260,112 560,52 840,68 C1100,82 1300,104 1440,82 L1440,120 L0,120 Z"
+            />
+          </svg>
+          <svg class="wave wave-front" viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path
+              d="M0,100 C300,118 620,84 900,96 C1160,106 1320,112 1440,100 L1440,120 L0,120 Z"
+            />
+          </svg>
+        </div>
+      </section>
+
+      <!-- 关于我 -->
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title reveal">
+            <span class="title-eyebrow">About Me</span>
+            关于我
+          </h2>
+          <div class="about-single reveal">
+            <p class="about-intro">
+              Enjoy every bit of it,in all its aching beauty
+            </p>
+            <div class="profile-layout">
+              <div class="photo-frame" aria-label="照片区域">
+                <div class="photo-layer" aria-hidden="true"></div>
+                <div class="photo-inner">
+                  <img src="./about-photo.jpg" alt="马潇宁的照片" />
+                </div>
+              </div>
+              <div class="profile-card">
+                <div class="profile-item">
+                  <span class="profile-icon">🎓</span>
+                  <div class="profile-content">
+                    <h3>学历</h3>
+                    <p class="profile-line"><strong>东南大学</strong> · 硕士</p>
+                    <p class="profile-line"><strong>北京体育大学</strong> · 学士</p>
+                  </div>
+                </div>
+                <div class="profile-item">
+                  <span class="profile-icon">🏆</span>
+                  <div class="profile-content">
+                    <h3>荣誉奖项</h3>
+                    <ul class="profile-list">
+                      <li>国家奖学金</li>
+                      <li>北京市三好学生</li>
+                      <li>北京市优秀毕业生</li>
+                    </ul>
+                    <ul class="profile-list">
+                      <li>东南大学一等奖学金</li>
+                      <li>东南大学体育美育先进个人</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="profile-item">
+                  <span class="profile-icon">🤝</span>
+                  <div class="profile-content">
+                    <h3>学生任职</h3>
+                    <ul class="profile-list">
+                      <li>学院学生会主席</li>
+                      <li>研究生会文体活动中心骨干</li>
+                      <li>班级团支书</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 实习经历 -->
+      <section id="experience" class="section section-alt">
+        <div class="container">
+          <h2 class="section-title reveal">
+            <span class="title-eyebrow">Experience</span>
+            我的实习经历
+          </h2>
+          <p class="section-desc quote-text reveal">走过的路，每一步都算数。</p>
+          <div class="timeline reveal">
+            <details class="timeline-item" open>
+              <summary class="timeline-head">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <span class="timeline-company">美团-点评事业部-玩乐产品-产品运营</span>
+                <span class="timeline-date">2026.03 - 2026.07</span>
+              </summary>
+              <div class="timeline-body">
+                <ul class="profile-list">
+                  <li>
+                    <strong>节点营销大促：</strong>
+                    围绕七节两月关键大促节点，参与点评踏青赏花季、五一战役、小城营销等活动。供给端通过主题选品+招商，活动期间核心商家GTV涨幅超3倍；流量端完整构建“蓄水-预热-爆发”的流量机制，并联动各业务做流量资源置换，单活动累计曝光UV达3亿+；补贴端结合点评人群画像制定差异化券补策略，ROI长期大于2。踏青赏花季曝光UVCTR 较春节期间0.08%→0.16%，提升近一倍。
+                  </li>
+                  <li>
+                    <strong>用户增长：</strong>
+                    建立点评景点渠道增长策略，通过push与热榜共建、利益点组织、广告素材优化、人群圈选、承接页优化by周投放push，打造点评景点热点，单条push带来超3000+意向UV，稳定贡献日均2w+意向UV，热点爆款率达28.57%。
+                  </li>
+                  <li>
+                    <strong>AI工作提效：</strong>
+                    为提升景点营销流程效率，运用AI coding建设点评景点营销平台实现营销活动落地与热点生产100%自动化，搭建push和热点文案自动化生产skill，日均曝光UV提升156%。
+                  </li>
+                </ul>
+              </div>
+            </details>
+            <details class="timeline-item" open>
+              <summary class="timeline-head">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <span class="timeline-company">小红书-社区部-运动组-内容运营</span>
+                <span class="timeline-date">2025.08 - 2025.10</span>
+              </summary>
+              <div class="timeline-body">
+                <ul class="profile-list">
+                  <li>
+                    <strong>内容促活：</strong>
+                    聚焦夏季健身减肥高搜趋势，围绕“一种很新的健身方式”“燃脂吧夏天”打造1+x个子话题，通过选题翻新与话题造势进行促产促消，实现当月健身日均dau170w→194w，话题总曝光数4.98亿，总阅读数1.53亿，高热笔记1800+篇。
+                  </li>
+                  <li>
+                    <strong>热点联动：</strong>
+                    观测站内前后端数据，运用SQL、Excel等数据分析工具对健身减肥社区笔记数据大盘进行取数与分析，通过数据结论策划与挖掘热点，透传活动主张、作者画像，运营站内上榜热点147个，其中站内Top10热点爆款率55%，曝光25亿+。
+                  </li>
+                  <li>
+                    <strong>创作者孵化：</strong>
+                    运营站内官方创作者社群20+，通过奖励激励方案主动调优，传透趋势话题，挖掘、建联与翻新领袖作者50+。
+                  </li>
+                </ul>
+              </div>
+            </details>
+            <details class="timeline-item" open>
+              <summary class="timeline-head">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <span class="timeline-company">携程-景点玩乐业务部-业务运营</span>
+                <span class="timeline-date">2025.07 - 2025.08</span>
+              </summary>
+              <div class="timeline-body">
+                <ul class="profile-list">
+                  <li>
+                    <strong>营销赋能：</strong>
+                    策划、跟进并落地景点玩乐业务部10+场营销活动的媒介投放流程，包括物料设计对接、线下大型媒介资源整合投放、谈判执行供应商资源置换等。
+                  </li>
+                  <li>
+                    <strong>竞品追踪：</strong>
+                    对携程景点门票业务竞品下的产品线路覆盖劣势与商品力覆盖劣势进行动态追踪，高效跨业务协作推动针对性优化方案落地，运用Excel构建竞对核查数据库并跟进业务解决劣势问题1000+条。
+                  </li>
+                  <li>
+                    <strong>业务运营：</strong>
+                    运用Excel高级函数与透视工具独立负责景点玩乐业务部日游产品周报、月报的分析产出与可视化呈现，对接500+供应商侧完成产品的上下架与优选产品推荐。
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- 项目 -->
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section-title reveal">
+            <span class="title-eyebrow">AI Projects</span>
+            我的AI实践项目
+          </h2>
+          <p class="section-desc quote-text reveal">把洞察和思考做成结果</p>
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <div class="project-cover cover-marketing">
+                <img src="./project-marketing.png" alt="点评景点营销平台" class="cover-img" />
+                <span class="project-tag">营销平台</span>
+              </div>
+              <div class="project-body">
+                <h3>点评景点营销平台</h3>
+                <p>协助运营人员了解景点频道资源位与初步申请。</p>
+                <div class="project-links">
+                  <a href="https://maxiaoning91-netizen.github.io/scenic-marketing/" target="_blank" rel="noopener">访问网站 ↗</a>
+                  <a href="https://github.com/maxiaoning91-netizen/scenic-marketing" target="_blank" rel="noopener">查看代码</a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-cover cover-schedule">
+                <img src="./project-schedule.png" alt="景点频道资源位排期系统" class="cover-img" />
+                <span class="project-tag">排期系统</span>
+              </div>
+              <div class="project-body">
+                <h3>景点频道资源位排期系统</h3>
+                <p>帮助运营人员管理景点频道资源位的排期与调度。</p>
+                <div class="project-links">
+                  <a href="https://maxiaoning91-netizen.github.io/scenic-schedule/" target="_blank" rel="noopener">访问网站 ↗</a>
+                  <a href="https://github.com/maxiaoning91-netizen/scenic-schedule" target="_blank" rel="noopener">查看代码</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 技能 -->
+      <section id="skills" class="section section-alt">
+        <div class="container">
+          <h2 class="section-title reveal">
+            <span class="title-eyebrow">Skills</span>
+            技能
+          </h2>
+          <ul class="skill-list reveal">
+            <li>英语可为工作语言</li>
+            <li>熟练使用Codex、Claudecode</li>
+            <li class="skill-break" aria-hidden="true"></li>
+            <li>SQL</li>
+            <li>Excel透视与函数</li>
+            <li>Photoshop</li>
+            <li>Tableau</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 联系我 -->
+      <section id="contact" class="section">
+        <div class="container contact-inner">
+          <h2 class="section-title reveal">
+            <span class="title-eyebrow">Contact</span>
+            联系我
+          </h2>
+          <div class="contact-links reveal">
+            <a class="contact-item" href="tel:18905991069">
+              <span class="contact-icon">☎️</span>
+              <span>
+                <strong>电话</strong>
+                <small>18905991069</small>
+              </span>
+            </a>
+            <a class="contact-item" href="mailto:mxnsunny1069@163.com">
+              <span class="contact-icon">📮</span>
+              <span>
+                <strong>邮箱</strong>
+                <small>mxnsunny1069@163.com</small>
+              </span>
+            </a>
+            <div class="contact-item">
+              <span class="contact-icon">🌟</span>
+              <span>
+                <strong>微信号</strong>
+                <small>Ricosunny</small>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>I AM 马潇宁</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
